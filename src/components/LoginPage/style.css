@@ -1,0 +1,31 @@
+.login-page {
+  background-color: #f2f2f2;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form-container {
+  background-color: white;
+  padding: 40px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.form-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.form-button {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.register-link {
+  margin-top: 20px;
+  text-align: center;
+}
