@@ -1,14 +1,21 @@
-module.exports = {
-  env: { browser: true, es2020: true },
-  extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:react-hooks/recommended',
-  ],
-  parser: '@typescript-eslint/parser',
-  parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
-  plugins: ['react-refresh'],
-  rules: {
-    'react-refresh/only-export-components': 'warn',
-  },
+{
+	"extends": ["react-app"],
+	"plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
+	"globals": {
+		"config": true
+	},
+	"rules": {
+		"prettier/prettier": "error",
+		"no-unused-expressions": "off",
+		"no-unused-vars": "off",
+		"no-undef": "off",
+		"jsx-a11y/anchor-is-valid": [
+			"error",
+			{
+				"components": ["Link"],
+				"specialLink": ["hrefLeft", "hrefRight"],
+				"aspects": ["noHref", "invalidHref", "preferButton"]
+			}
+		]
+	}
 }
